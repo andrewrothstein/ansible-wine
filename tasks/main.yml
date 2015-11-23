@@ -1,0 +1,4 @@
+---
+- name: (RedHat) install...
+  when: ansible_os_family == 'RedHat'
+  include: RedHat.yml
