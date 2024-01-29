@@ -1,18 +1,15 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  categories:
-    - development
   company: BlackRock
-  description: wine role
+  description: installs wine
+  galaxy_tags:
+    - development
   license: MIT
   min_ansible_version: '1.2'
   namespace: andrewrothstein
   platforms:
     - name: Alpine
-      versions:
-        - all
-    - name: ArchLinux
       versions:
         - all
     - name: Debian

@@ -1,4 +1,7 @@
 ---
+- name: Installing andrewrothstein.epel
+  ansible.builtin.include_role:
+    name: andrewrothstein.epel
 - name: Install OS pkgs
   ansible.builtin.package:
     name: '{{ wine_os_pkgs | default("wine") }}'
