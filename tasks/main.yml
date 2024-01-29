@@ -1,4 +1,5 @@
 ---
-- name: (RedHat) install...
-  when: ansible_os_family == 'RedHat'
-  include: RedHat.yml
+- name: Install OS pkgs
+  ansible.builtin.package:
+    name: '{{ wine_os_pkgs | default("wine") }}'
+    state: present

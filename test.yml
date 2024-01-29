@@ -1,4 +1,5 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.wine
+  hosts: all
   roles:
-    - { role: '.' }
+    - role: '{{ playbook_dir }}'
